@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Egypt</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+<div class="signature">
+    Designed & Developed by Dalia ELMOSALMY
+</div>
+
+
+        <h2>Travel Egypt</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#hotels">Hotels</a>
+            <a href="#trips">Trips</a>
+            <a href="#offers">Offers</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#booking" class="nav-button">Book Now</a>
+        <a href="/bookings">View Bookings</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <div class="hero-content">
+
+            <p>VISIT OUR BEAUTIFUL</p>
+
+            <h1>EGYPT</h1>
+
+            <h3>Discover the Magic of Egypt</h3>
+
+            <p>Explore history, culture and unforgettable destinations.</p>
+
+            <a href="#destinations" class="main-button">Explore Now</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+
+        <h2>Explore Popular Destinations</h2>
+
+        <p>Discover the most beautiful places in Egypt.</p>
+
+        <div class="destination-container">
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020" alt="Giza Pyramids">
+
+                <h3>Giza Pyramids</h3>
+
+                <p>Discover the wonders of ancient Egypt.</p>
+
+                <button>View Details</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://png.pngtree.com/thumb_back/fw800/background/20240409/pngtree-egypt-luxor-temple-view-image_15653540.jpg" alt="Luxor">
+
+                <h3>Luxor</h3>
+
+                <p>Explore ancient temples and history.</p>
+
+                <button>View Details</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a" alt="Aswan">
+
+                <h3>Aswan</h3>
+
+                <p>Enjoy the beauty of the Nile.</p>
+
+                <button>View Details</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Sharm El Sheikh">
+
+                <h3>Sharm El Sheikh</h3>
+
+                <p>Enjoy beaches and amazing sea views.</p>
+
+                <button>View Details</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Hotels Section -->
+    <section id="hotels">
+
+        <h2>Discover Our Hotels</h2>
+
+        <p>Find the perfect place to stay in Egypt.</p>
+
+        <div class="destination-container">
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Cairo Hotel">
+
+                <h3>Luxury Hotel Cairo</h3>
+
+                <p>Enjoy a comfortable stay in Cairo.</p>
+
+                <h4>Starting from $80 / Night</h4>
+
+                <button>Book Now</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d" alt="Red Sea Resort">
+
+                <h3>Red Sea Resort</h3>
+
+                <p>Relax and enjoy beautiful sea views.</p>
+
+                <h4>Starting from $120 / Night</h4>
+
+                <button>Book Now</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Luxor Hotel">
+
+                <h3>Luxor Palace Hotel</h3>
+
+                <p>Stay close to ancient Egyptian history.</p>
+
+                <h4>Starting from $95 / Night</h4>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trips Section -->
+    <section id="trips">
+
+        <h2>Explore Our Trips</h2>
+
+        <p>Choose your next adventure in Egypt.</p>
+
+        <div class="destination-container">
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368" alt="Pyramids Adventure">
+
+                <h3>Pyramids Adventure</h3>
+
+                <p>Discover the Great Pyramids and Sphinx.</p>
+
+                <h4>Starting from $50</h4>
+
+                <button>Book Trip</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020" alt="Luxor and Aswan">
+
+                <h3>Luxor & Aswan Tour</h3>
+
+                <p>Explore ancient temples and the Nile.</p>
+
+                <h4>Starting from $100</h4>
+
+                <button>Book Trip</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6" alt="Sharm Trip">
+
+                <h3>Sharm El Sheikh Trip</h3>
+
+                <p>Enjoy beaches and amazing sea views.</p>
+
+                <h4>Starting from $80</h4>
+
+                <button>Book Trip</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking Section -->
+    <section id="booking">
+
+        <h2>Book Your Trip</h2>
+
+        <p>Plan your perfect vacation in Egypt.</p>
+
+        <div class="booking-container">
+
+            <form id="bookingForm" action="/book" method="POST">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+               
+
+<label>Email Address</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+<label>Choose Destination</label>
+<select name="destination" required>
+    <option value="">Select Destination</option>
+    <option value="Giza Pyramids">Giza Pyramids</option>
+    <option value="Luxor">Luxor</option>
+    <option value="Aswan">Aswan</option>
+    <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+</select>
+
+
+
+                <label>Booking Type</label>
+
+                <select name="booking_type" required>
+
+                    <option value="">Choose Type</option>
+
+                    <option value="Hotel">Hotel</option>
+
+                    <option value="Tour">Tour</option>
+
+                    <option value="Trip">Trip</option>
+
+                </select>
+
+
+                <label>Arrival Date</label>
+
+                <input
+                    type="date"
+                    name="arrival_date"
+                    id="arrivalDate"
+                    required
+                >
+
+
+                <label>Departure Date</label>
+
+                <input
+                    type="date"
+                    name="departure_date"
+                    id="departureDate"
+                    required
+                >
+
+
+                <label>Number of Guests</label>
+
+                <input
+                    type="number"
+                    name="guests"
+                    min="1"
+                    value="1"
+                    required
+                >
+
+
+                <button type="submit">Confirm Booking</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Offers Section -->
+    <section id="offers">
+
+        <h2>Special Travel Offers</h2>
+
+        <p>Enjoy amazing deals on your next Egyptian adventure.</p>
+
+        <div class="destination-container">
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Luxury Stay">
+
+                <h3>Luxury Stay Offer</h3>
+
+                <p>Enjoy a luxury hotel experience.</p>
+
+                <h4>20% OFF</h4>
+
+                <button>Get Offer</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368" alt="Egypt Discovery">
+
+                <h3>Egypt Discovery</h3>
+
+                <p>Explore the wonders of ancient Egypt.</p>
+
+                <h4>15% OFF</h4>
+
+                <button>Get Offer</button>
+
+            </div>
+
+
+            <div class="destination-card">
+
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6" alt="Summer Vacation">
+
+                <h3>Summer Vacation</h3>
+
+                <p>Enjoy an unforgettable beach holiday.</p>
+
+                <h4>25% OFF</h4>
+
+                <button>Get Offer</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Travel Egypt</h2>
+
+        <p>Your guide to discovering Egypt.</p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        // Get Booking Form Elements
+
+        const bookingForm = document.getElementById("bookingForm");
+
+        const arrivalDate = document.getElementById("arrivalDate");
+
+        const departureDate = document.getElementById("departureDate");
+
+
+        // Update Minimum Departure Date
+
+        arrivalDate.addEventListener("change", function() {
+
+            departureDate.min = arrivalDate.value;
+
+        });
+
+
+        // Validate Booking Dates
+
+        bookingForm.addEventListener("submit", function(event) {
+
+            if (departureDate.value <= arrivalDate.value) {
+
+                event.preventDefault();
+
+                alert("Departure date must be after arrival date!");
+
+                return;
+
+            }
+
+
+            // Confirm Booking
+
+            let confirmBooking = confirm("Are you sure you want to confirm your booking?");
+
+
+            if (!confirmBooking) {
+
+                event.preventDefault();
+
+            }
+
+        });
+
+    </script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+
+</body>
+
+</html>

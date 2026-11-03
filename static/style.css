@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7ed;
+    color: #263238;
+}
+
+header {
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+header h2 {
+    color: #c58b20;
+    font-size: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263238;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #c58b20;
+}
+
+#home {
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url("https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=2000&q=80");  height: 650px;
+  
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 100px;
+    letter-spacing: 12px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 20px;
+}
+
+.hero-content h3 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #d58b27;
+    color: white;
+    padding: 18px 35px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#destinations {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+#destinations h2,
+#offers h2,
+#about h2,
+#contact h2 {
+    font-size: 35px;
+    color: #bd8122;
+    margin-bottom: 20px;
+}
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding-bottom: 25px;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    margin: 18px;
+    font-size: 23px;
+}
+
+.destination-card p {
+    margin: 15px;
+    color: #666;
+}
+
+.destination-card button {
+    background-color: #bd8122;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#offers,
+#about,
+#contact {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .destination-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+}/* Destination Cards Hover Effect */
+
+.destination-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+/* Image Effect */
+
+.destination-card img {
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Button Effect */
+
+.destination-card button {
+    transition: 0.3s ease;
+}
+
+.destination-card button:hover {
+    background-color: #d58b27;
+    transform: scale(1.05);
+} 
+@media (max-width: 500px) {
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        letter-spacing: 5px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-content h3 {
+        font-size: 22px;
+    }
+
+    #home {
+        height: 500px;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 8px;
+    }
+
+}
+/* Booking Section */
+
+#booking {
+    padding: 80px 7%;
+    text-align: center;
+    background-color: #fff7ed;
+}
+
+.booking-container {
+    max-width: 650px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+#bookingForm {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#bookingForm label {
+    margin: 12px 0 7px;
+    font-weight: bold;
+}
+
+#bookingForm input,
+#bookingForm select {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#bookingForm button {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #bd8122;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#bookingForm button:hover {
+    background-color: #d58b27;
+}
+
+.signature {
+    color: #d4af37;
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    padding: 5px 20px;
+}
+
+/* Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
